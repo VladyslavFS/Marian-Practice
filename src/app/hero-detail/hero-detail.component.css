@@ -1,6 +1,6 @@
 /* HeroDetailComponent's private CSS styles */
 label {
-  color: #435960;
+  color: #8b4513; /* Коричневий колір для тексту */
   font-weight: bold;
 }
 input {
@@ -9,13 +9,17 @@ input {
 }
 button {
   margin-top: 20px;
-  background-color: #eee;
+  margin-right: .5rem;
+  background-color: #006400; /* Зелений колір для кнопок */
+  color: #fff; /* Білий текст */
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
+  border: none; /* Відсутність обведення */
 }
 button:hover {
-  background-color: #cfd8dc;
+  background-color: #ffd700; /* Жовтий колір для ховеру */
+  color: #8b4513; /* Коричневий текст при наведенні */
 }
 button:disabled {
   background-color: #eee;

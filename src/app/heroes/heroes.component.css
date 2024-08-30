@@ -5,6 +5,16 @@
   padding: 0;
   width: 15em;
 }
+
+input {
+  display: block;
+  width: 50%; /* Задайте потрібну ширину, наприклад, 50% від батьківського елемента */
+  max-width: 400px; /* Задайте максимальну ширину */
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
 .heroes li {
   position: relative;
   cursor: pointer;
@@ -15,25 +25,27 @@
 }
 
 .heroes a {
-  color: #333;
+  color: #8b4513; /* Коричневий текст */
   text-decoration: none;
-  background-color: #EEE;
+  background-color: #ffd700; /* Жовтий фон */
   margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
+  padding: .5em 0; /* Збільшено padding для більше місця всередині блоку */
+  height: 2.5em; /* Збільшено висоту блоку */
   border-radius: 4px;
   display: block;
-  width: 100%;
+  width: 149%;
+  font-size: 1.2em; /* Збільшено розмір шрифту */
+  box-sizing: border-box;
 }
 
 .heroes a:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
+  color: #006400; /* Зелений текст при наведенні */
+  background-color: #ffeb3b; /* Світліший жовтий фон при наведенні */
 }
 
 .heroes a:active {
-  background-color: #525252;
-  color: #fafafa;
+  background-color: #8b4513; /* Коричневий фон при активності */
+  color: #fafafa; /* Білий текст при активності */
 }
 
 .heroes .badge {
@@ -41,14 +53,48 @@
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #405061;
+  background-color: #8b4513; /* Коричневий фон для бейджа */
   line-height: 1em;
   position: relative;
   left: -1px;
   top: -4px;
-  height: 1.8em;
+  height: 2.4em; /* Збільшено висоту бейджа під висоту блоку */
   min-width: 16px;
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+.add-button {
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: #8b4513; /* Коричневий фон для кнопки */
+  border: none;
+  border-radius: 4px;
+}
+
+.add-button:hover {
+  color: white;
+  background-color: #006400; /* Зелений фон при наведенні */
+}
+
+button.delete {
+  position: absolute;
+  left: calc(132% + 20px); /* Зміщення кнопки видалення вправо відповідно до збільшеної ширини блоку */
+  top: 5px;
+  background-color: white;
+  color: #8b4513; /* Коричневий текст */
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+  border: 1px solid #8b4513; /* Коричнева обводка */
+  border-radius: 4px; /* Закруглені кути */
+}
+
+
+button.delete:hover {
+  background-color: #8b4513; /* Коричневий фон при наведенні */
+  color: white;
 }

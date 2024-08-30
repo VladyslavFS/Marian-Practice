@@ -1,0 +1,48 @@
+/* HeroSearch private styles */
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+input {
+  padding: .5rem;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  display: block;
+}
+
+input:focus {
+  outline: #006400 auto 1px; /* Зелений колір обведення при фокусі */
+}
+
+li {
+  list-style-type: none;
+}
+
+.search-result li a {
+  border-bottom: 1px solid #8b4513; /* Коричневий колір для меж */
+  border-left: 1px solid #8b4513;
+  border-right: 1px solid #8b4513;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #ffd700; /* Жовтий колір для фону при наведенні */
+  color: #8b4513; /* Коричневий текст при наведенні */
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+}

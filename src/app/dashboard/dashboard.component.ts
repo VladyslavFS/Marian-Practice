@@ -4,17 +4,18 @@ import { RouterLink } from '@angular/router';
 
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
+import { HeroSearchComponent } from '../hero-search/hero-search.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NgFor, RouterLink],
+  imports: [NgFor, RouterLink, HeroSearchComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent {
 
-  heroes: Hero[] = [];
+  public heroes: Hero[] = [];
 
   constructor(private heroService: HeroService) { }
 
@@ -22,8 +23,8 @@ export class DashboardComponent {
     this.getHeroes();
   }
 
-  getHeroes(): void {
+  private getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes.slice(1, 5));
+      .subscribe(heroes => this.heroes = heroes.slice(0, 3));
   }
 }
