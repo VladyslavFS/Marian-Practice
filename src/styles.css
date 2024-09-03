@@ -2,7 +2,10 @@
 body, h1, h2, h3, p, a {
     color: #fff; /* Білий текст для контрасту */
   }
-  
+
+  html, body {
+    height:100%;
+}
   /* Фон для контейнерів */
   .container {
     background-color: rgba(255, 255, 255, 0.8); /* Білий фон з прозорістю */
@@ -25,7 +28,7 @@ body, h1, h2, h3, p, a {
   }
   
 body {
-    background-image: url('https://direct.farm/_next/image?url=https%3A%2F%2Fdirect.farm%2Fcontent%2Fea6%2Fea6d186f685e4e408d7498b42a3e3653616585.webp&w=1544&q=75');
+    background-image: url('https://c1.wallpaperflare.com/path/58/557/238/agriculture-cereal-combine-farm-4a734807c876dd1b4ea2d92203f46cf2.jpg');
     background-size: cover; /* Зображення заповнює весь екран */
     background-position: center; /* Центрує зображення */
     background-repeat: no-repeat; /* Не повторює зображення */
