@@ -28,10 +28,11 @@ body, h1, h2, h3, p, a {
   }
   
 body {
-    background-image: url('https://c1.wallpaperflare.com/path/58/557/238/agriculture-cereal-combine-farm-4a734807c876dd1b4ea2d92203f46cf2.jpg');
+    background-image: url('assets/background.webp');
     background-size: cover; /* Зображення заповнює весь екран */
     background-position: center; /* Центрує зображення */
     background-repeat: no-repeat; /* Не повторює зображення */
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
   }
